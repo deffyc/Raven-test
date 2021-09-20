@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Raven Test</title>
+		<link rel="stylesheet" href="./css/home.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+        <main>
+        <h1>Test de Raven</h1>
+        <div class="main-content-wrapper">
+        <div class="description-container">
+		    <article class="general-info-wrapper">
+		        <h2>Algunos tips</h2>
+		        <p class="theorical-concept">
+		            El test de matrices progresivas de Raven es una prueba que mide la capacidad intelectual y la capacidad de razonamiento abstracto.
+		        </p>
+		        <p class="theorical-concept">
+                    Existen 3 versiones del test, siendo éste el test de escala general.
+		        </p>
+		        <p class="theorical-concept">
+                    Para completar el test, debe seleccionar la placa que mejor se adapte a la figura principal.
+		        </p>
+		        <p class="theorical-concept">
+                    Son 60 placas así que tome su tiempo.
+		        </p>
+		    </article>
+		</div>
+		<div class="form-container">
+			<form id="formPersonData" action="./start.html">
+				<div class="input-container">
+					<label>
+						Nombre:
+						<input id="personName" class="input-form" type="text" minlength="3" maxlength="20" pattern="[a-zA-ZáéíóúñÁÉÍÓÚÑ]{2,20}" placeholder="Ingresa tu nombre" required title="Person name must contain only letters without spaces">
+					</label>
+				</div>
+				<div class="input-container">
+					<label>
+						Edad:	
+						<input id="personAge" placeholder="Edad" class="input-form" min="10" max="100" type="number" required title="Person age must be greater than 9 and fewer than 100">
+					</label>
+				</div>
+				<div>
+			<input id="sendInfoButton" class="submit-button" type="submit" value="Aceptar">
+			</div>
+			</form>
+		</div>
+		</div>
+		</main>
+
+		<script type="module" src="./js/verify.js"></script>
+	</body>
+
+</html>

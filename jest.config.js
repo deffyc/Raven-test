@@ -1,0 +1,6 @@
+{
+	"jest": {
+		"extensionsToTreatAsESM": [".js"]
+	},
+	"transform": {}
+}

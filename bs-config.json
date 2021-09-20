@@ -1,0 +1,9 @@
+{
+  "injectChanges": false,
+  "port": 8000,
+  "files": ["./**/*.{html,htm,css,js,png"],
+  "watchOptions": {"ignored": ["node_modules","src"]},
+  "server": {
+    "baseDir": "./"
+  }
+}

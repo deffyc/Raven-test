@@ -1,0 +1,23 @@
+{
+  "name": "raven_test",
+  "version": "1.0.0",
+  "description": "Implementation of Raven's test",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "dev": "lite-server"
+  },
+  "keywords": [
+    "raven",
+    "raventest",
+    "psychology",
+    "test"
+  ],
+  "author": "Rommy Fernández",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.2.0",
+    "lite-server": "^2.6.1"
+  }
+}
