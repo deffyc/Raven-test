@@ -5,7 +5,7 @@ const [personData, personAnswers] = JSON.parse(localStorage.getItem('dataToEvalu
       resultsTitle = document.getElementById('title'),
       resultsContainer = document.getElementById('personResults');
 
-//localStorage.clear();
+localStorage.clear();
 
 const createResultField = (message, value) => {
       const paragraphElement = document.createElement('p');
