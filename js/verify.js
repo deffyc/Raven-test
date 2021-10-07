@@ -35,7 +35,7 @@ const hasInputWrongLength = (valueProvided, minLength, maxLength) => {
     return false;
 };
 
-const IsInputWrongNumber = (valueProvided, minLength, maxLength) => {
+const hasInputWrongNumber = (valueProvided, minLength, maxLength) => {
     if ((parseInt(valueProvided) >= minLength) && (parseInt(valueProvided) <= maxLength)) {
         return false;
     }
@@ -50,7 +50,7 @@ const verifyFormData = (event) => {
     const [name, minLength, maxLength] = inputsLengthData.personName;
     const [age, minAge, maxAge] = inputsLengthData.personAge;
 
-    if ((hasInputWrongLength(name.value, minLength, maxLength)) || (IsInputWrongNumber(age.value, minAge, maxAge))) {
+    if ((hasInputWrongLength(name.value, minLength, maxLength)) || (hasInputWrongNumber(age.value, minAge, maxAge))) {
         event.preventDefault();
         return false;
     }
